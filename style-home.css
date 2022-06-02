@@ -183,7 +183,7 @@ nav ul li a::after {
   left: 0;
   bottom: -1.5rem;
 
-  transition: widht 0.2s;
+  transition: width 0.2s;
 }
 
 nav ul li a:hover::after,
@@ -407,6 +407,101 @@ em {
   color: var(--base-color);
 }
 
+/*página - contato*/
+
+#main-contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+form {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: var(--subtitle-font-size);
+  color: #e61919;
+  margin: 0 0 0.3rem;
+}
+.input-padrao {
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0.3rem 1rem;
+  width: 60%;
+  border: #e61919 1px solid;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+.checkbox {
+  margin: 1rem 0;
+}
+
+#enviar {
+  width: 30%;
+  border: #e61919 1px solid;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #e61919;
+  background: var(--base-color-second);
+  transition: 1.5s all;
+  cursor: pointer;
+}
+
+#enviar:hover {
+  background: #880c0c;
+  color: white;
+  transform: translateY(8px) scale(1.1);
+}
+
+#tabela {
+  width: 40%;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #e61919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  margin: 2rem 2rem;
+  border: 1px solid #e61919;
+  text-align: center;
+  justify-content: center;
+}
+
+thead {
+  background-color: var(--base-color-second);
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #e61919;
+  padding: 1rem 1rem;
+}
+
+#img-tabela {
+  width: 90%;
+  margin: 2rem 2rem;
+  padding: 1rem;
+  border: #e61919 3px double;
+  border-radius: 4px;
+}
+
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color-second);
@@ -441,6 +536,12 @@ footer .social a:hover {
 #copy {
   font-family: "Cookie", cursive;
   font-size: 1.2rem;
+}
+
+footer .icon-link {
+  width: 1.5rem;
+  display: block;
+  margin-left: -15px;
 }
 
 /* Back to top */
@@ -550,7 +651,7 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
-  /* services */
+  /* services - página serviços*/
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }

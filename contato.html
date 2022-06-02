@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-home.css">
+   
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/fa077ca85e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contato - Barbearia Alura</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="index.html">
+          <img
+            class="logo"
+            src="./img/logo-cherry.svg"
+            alt="Logo Barbearia"
+            srcset=""
+          />
+        </a>
+        <h1 class="title">Barbearia Alura</h1></div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="./index.html" target="_blank">Início</a></li>
+            <li><a class="title" href="./index.html">Sobre</a></li>
+            <li><a class="title" href="./servicos.html" target="_blank">Serviços</a></li>
+            <li><a class="title" href="./contato.html" target="_blank">Contato</a></li>
+          </ul>
+        </div>
+        <!-- menu -->
+        <div class="toggle icon-menu"><i class="fa-solid fa-bars fa-lg"></i></div>
+        <div class="toggle icon-close"><i class="fa-solid fa-xmark"></i></div>
+      </nav>
+    </header>
+
+    <main id="main-contato">
+        <section id="formulario">
+            <form action="#">
+                <label for="nome">Nome</label>
+                <input type="text" name="" id="nome" class="input-padrao" required placeholder="Digite seu nome...">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="" id="email" class="input-padrao" required placeholder="Digite seu e-mail...">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="" id="telefone" class="input-padrao" placeholder="(xx)xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Digite sua mensagem..."></textarea>
+
+                <fieldset>
+
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" value="e-mail" id="radio-email">E-mail</label>
+                    
+
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+
+                    <label for ="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+
+                    <select>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </fieldset>
+                    
+
+                <label class="checkbox"> <input type="checkbox" checked >Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar Formulário" id="enviar">
+            </form>
+        </section>
+
+        <section id="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda á Sexta</td>
+                        <td>8:00h ás 20:00h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado e Domingo</td>
+                        <td>13:00h ás 20:00h</td>
+                    </tr>
+                    <tr>
+                        <td>Feriados</td>
+                        <td>Sem expediênte</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="img-tabela">
+                <img src="./img/banner-3.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <p>©2022 Barbearia Alura - Todos os direitos reservados. </p>
+        </div>
+        <div class="logo">
+            <img src="./img/logo-cherry.svg" alt="logo barbearia" >
+        </div>
+
+        <div class="social grid">
+           <p id="copy">  Desenvolvida por: JessicaCereja &#127826</p>
+          <a href="https://www.linkedin.com/in/jessica-c-santos/" target="_blank">
+            <img class="icon-link" src="./img/linkedin-iconcereja.svg" alt="">
+          </a>
+          <a href="https://github.com/JessCereja/" target="_blank">
+              <img class="icon-link" src="./img/github-iconcereja.svg" alt="">
+        </a>
+        </div>
+      </div>
+    </footer>
+
+     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
